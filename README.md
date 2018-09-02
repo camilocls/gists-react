@@ -1,5 +1,5 @@
 
-Lista de GISTS de un usuario en Github.
+List of GISTS from an user Github.
 
 ## Install
 
