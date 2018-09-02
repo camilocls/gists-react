@@ -39,7 +39,6 @@ class Gist extends Component {
     doc.close();
   }
 
-
   /**
    * Get data of a Gist ID.
    *

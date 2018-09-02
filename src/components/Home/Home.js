@@ -22,7 +22,6 @@ class Home extends Component {
   }
 
   render() {
-
     const { user, viewList } = this.state;
 
     if ( viewList === true ) {
