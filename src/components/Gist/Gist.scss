@@ -1,0 +1,26 @@
+.gist {
+  max-width: 800px;
+  margin: 0 auto;
+  margin: 40px auto 60px;
+
+  &__head {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+
+  &__back {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+  }
+
+  &__icon {
+    width: 20px;
+    margin-right: 4px;
+  }
+
+  &__iframe {
+    width: 100%;
+  }
+}

@@ -1,0 +1,27 @@
+.search-user {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  &__title {
+    margin: 0 0 20px;
+  }
+
+  &__field {
+    border: 1px solid #ddd;
+    border-radius: 100px;
+    padding: 16px 20px;
+    text-align: center;
+    color: #666;
+    font-size: 20px;
+  }
+
+  &__note {
+    font-size: 14px;
+    color: #888;
+    display: inline-block;
+    margin: 16px 0 0;
+  }
+}

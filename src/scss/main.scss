@@ -1,0 +1,76 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  color: #888;
+}
+
+.btn {
+  color: #666;
+}
+
+.error {
+  position: relative;
+  padding-bottom: 20px;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  text-align: center;
+  border-bottom: 1px solid #fd6a6a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 800px;
+  margin: 60px auto 80px;
+
+  &__btn {
+    display: inline-flex;
+    margin-top: 30px;
+  }
+}
+
+.loader {
+  position: relative;
+  padding-bottom: 6px;
+  display: block;
+  margin: 0 auto;
+  max-width: 200px;
+  text-align: center;
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    animation-name: loader;
+    animation-duration: 0.7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+  }
+}
+
+@keyframes loader {
+  0% {
+    transform: scaleX(0);
+    transform-origin: 0 0;
+  }
+
+  49% {
+    transform: scaleX(1);
+    transform-origin: 0 0;
+  }
+
+  50% {
+    transform: scaleX(1);
+    transform-origin: 100% 0;
+  }
+
+  100% {
+    transform: scaleX(0);
+    transform-origin: 100% 0;
+  }
+}

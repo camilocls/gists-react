@@ -1,0 +1,38 @@
+{
+  "name": "ms-challenge",
+  "version": "1.0.0",
+  "description": "Code Challenge",
+  "main": "index.js",
+  "author": "Camilo Lopez",
+  "license": "MIT",
+  "scripts": {
+    "start": "webpack-dev-server --config ./webpack.config.js --mode development",
+    "build": "webpack",
+    "test": "echo \"No test specified\" && exit 0"
+  },
+  "keywords": [],
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "css-loader": "^1.0.0",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "node-sass": "^4.9.3",
+    "react-hot-loader": "^4.3.3",
+    "react-router-dom": "^4.3.1",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.0",
+    "webpack": "^4.15.1",
+    "webpack-cli": "^3.0.8",
+    "webpack-dev-server": "^3.1.4"
+  },
+  "dependencies": {
+    "babel-preset-env": "^1.7.0",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "url-loader": "^1.1.1"
+  }
+}
