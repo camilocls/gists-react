@@ -9,6 +9,13 @@ class Gist extends Component {
     gist: null
   }
 
+  /**
+   * Update iframe in the DOM with content
+   * from the Gist
+   *
+   * @param {Object} data Gist
+   * @memberof Gist
+   */
   updateIframe( data ) {
     const { id } = data;
 
@@ -32,6 +39,12 @@ class Gist extends Component {
     doc.close();
   }
 
+
+  /**
+   * Get data of a Gist ID.
+   *
+   * @memberof Gist
+   */
   getData() {
     const { gist_id } = this.props.match.params || this.props;
 

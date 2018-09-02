@@ -21,6 +21,11 @@ class GistList extends Component {
     }
   }
 
+  /**
+   * Get the Gists from an user.
+   *
+   * @memberof GistList
+   */
   getData() {
     const { user } = this.props.match.params || this.props;
 

@@ -1,13 +1,17 @@
 import React, { Component } from 'react';
-
-import { Home, Gist, GistList } from '../';
-
 import {
   BrowserRouter as Router,
   Route,
   Switch,
 } from 'react-router-dom';
+import { Home, Gist, GistList } from '../';
 
+/**
+ * Main Component with routes
+ *
+ * @class App
+ * @extends {Component}
+ */
 class App extends Component {
   render() {
     return(
