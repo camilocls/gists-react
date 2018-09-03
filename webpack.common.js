@@ -1,6 +1,6 @@
-const webpack = require('webpack');
-const HtmlWebPackPlugin  = require('html-webpack-plugin');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const path = require('path');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: './src/index.js',
@@ -10,10 +10,6 @@ module.exports = {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         use: ['babel-loader']
-      },
-      {
-        test: /\.scss$/,
-        use: ['style-loader', 'css-loader', 'sass-loader']
       },
       {
         test: /\.(jpe?g|png|gif)$/,
@@ -37,21 +33,16 @@ module.exports = {
   resolve: {
     extensions: ['*', '.js', '.jsx']
   },
-  output: {
-    path: __dirname + '/dist',
-    publicPath: '/',
-    filename: 'bundle.js'
-  },
   plugins: [
-    new webpack.HotModuleReplacementPlugin(),
-    new HtmlWebPackPlugin({
+    new CleanWebpackPlugin(['dist']),
+    new HtmlWebpackPlugin({
       template: './src/index.html',
-      filename: './index.html'
+      filename: 'index.html'
     })
   ],
-  devServer: {
-    contentBase: './src',
-    hot: true,
-    historyApiFallback: true,
+  output: {
+    publicPath: '/',
+    filename: '[name].bundle.js',
+    path: path.resolve(__dirname, 'dist')
   }
 };
