@@ -5,7 +5,7 @@ import {
   Route,
   Switch,
 } from 'react-router-dom';
-import { Home, Gist, GistList } from '../';
+import { Home, Gist, GistList } from './components';
 
 /**
  * Main Component with routes

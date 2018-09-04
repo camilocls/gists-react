@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import Loader from '../Loader/Loader';
+import iconBack from '../../assets/arrow_back.png';
 import { TOKEN } from '../../config/config';
 import style from './GistList.scss';
-import iconBack from '../../assets/arrow_back.png';
 
 class GistList extends Component {
   state = {
@@ -60,7 +61,7 @@ class GistList extends Component {
     if( !gists )
       return(
         <div className="list">
-          <p className="loader">Loading</p>
+          <Loader />
         </div>
       );
 

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import Loader from '../Loader/Loader';
 import { TOKEN } from '../../config/config';
 import style from './Gist.scss';
 import iconBack from '../../assets/arrow_back.png';
@@ -83,7 +84,7 @@ class Gist extends Component {
     if( !gist )
       return (
         <div className="gist">
-          <p className="loader">Loading</p>
+          <Loader />
         </div>
       );
 
