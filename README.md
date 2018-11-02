@@ -1,6 +1,6 @@
 ## Gist List
 
-List of GISTS from an user GitHub.
+Gist List of a GitHub user.
 
 ![alt text](screenshot.png)
 
